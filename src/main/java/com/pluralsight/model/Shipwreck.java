@@ -1,4 +1,4 @@
-package com.boot.model;
+package com.pluralsight.model;
 
 public class Shipwreck {
 	Long id;
