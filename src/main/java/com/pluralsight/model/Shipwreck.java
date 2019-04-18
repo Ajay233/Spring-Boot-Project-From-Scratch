@@ -1,6 +1,15 @@
 package com.pluralsight.model;
 
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Shipwreck {
+	@Id // Let spring know which field is the primary key
+	@GeneratedValue(strategy = GenerationType.AUTO)  // Let spring know how the primary key is generated i.e. the database will take care of this
 	Long id;
 	String name;
 	String description;
